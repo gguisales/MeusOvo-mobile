@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    z-index: 1;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+}
+
+header h1{
+    font-family: 'Slackey', cursive;
+    padding-right: 20px;
+    color: gold;
+    font-size: 20pt;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ion-icon{
+    padding-right: 20px;
+    color:white;
+}
+
+header button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: black;
+    box-shadow: none;
+}
+
+
+.sec1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/caixa-de-ovo-colorida.jpg);
+}
+
+.sec1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 h1{
+    background-color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 42pt;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.sec1 h2{
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    color: white;
+    opacity: 95%;
+}
+
+.sec2{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-verprodutos{
+    padding: 5px;
+    color: gold;
+    text-decoration: none;
+}
+
+.card-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
