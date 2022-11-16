@@ -18,14 +18,15 @@ CREATE TABLE pedido(
 	cep VARCHAR (10),
 	status_pedido VARCHAR (10)
 );
+
 CREATE TABLE fatura(
-cd_fatura INT PRIMARY KEY NOT NULL,
-preço_unit INT,
-data_fatura DATE,
-VL_TOTAL INT,
-cd_produto INT,
- foreign key (cd_produto) REFERENCES produto (cd)
-);
+	cd_fatura INT PRIMARY KEY NOT NULL,
+	preço_unit INT,
+	data_fatura DATE,
+	VL_TOTAL INT,
+	cd_produto INT,
+	foreign key (cd_produto) REFERENCES produto (cd)
+	);
 
 
 
